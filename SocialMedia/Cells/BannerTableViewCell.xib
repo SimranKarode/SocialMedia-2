@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="BannerTableViewCell" customModule="SocialMedia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmh-86-IAQ" customClass="CardView" customModule="SocialMedia" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="5" width="320" height="210"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wi1-Ys-f6W" customClass="BJAutoScrollingCollectionView" customModule="SocialMedia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="SSv-BX-kPH"/>
+                                    <constraint firstAttribute="height" constant="210" id="guj-nd-Xd5"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xMP-gx-BaG">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wi1-Ys-f6W" secondAttribute="bottom" id="6YD-Ov-fAn"/>
+                            <constraint firstItem="wi1-Ys-f6W" firstAttribute="leading" secondItem="jmh-86-IAQ" secondAttribute="leading" id="8u7-8y-laD"/>
+                            <constraint firstAttribute="trailing" secondItem="wi1-Ys-f6W" secondAttribute="trailing" id="qGa-RL-qEE"/>
+                            <constraint firstItem="wi1-Ys-f6W" firstAttribute="top" secondItem="jmh-86-IAQ" secondAttribute="top" id="r1b-Jv-yQO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jmh-86-IAQ" secondAttribute="bottom" constant="5" id="2bY-PI-aBu"/>
+                    <constraint firstItem="jmh-86-IAQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="d9y-Ac-y0c"/>
+                    <constraint firstAttribute="trailing" secondItem="jmh-86-IAQ" secondAttribute="trailing" id="ge9-6t-f3U"/>
+                    <constraint firstItem="jmh-86-IAQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kEP-NB-fVx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backview" destination="jmh-86-IAQ" id="AqB-lx-XAv"/>
+                <outlet property="collectionview_Main" destination="wi1-Ys-f6W" id="L1h-8w-w14"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="94.419642857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

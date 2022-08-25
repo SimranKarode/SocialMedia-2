@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StaticCell" customModule="SocialMedia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8s-75-Fmu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-Jx-U7f">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Design " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twW-tF-Tgl">
+                                        <rect key="frame" x="21" y="9.5" width="128" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="twW-tF-Tgl" firstAttribute="centerY" secondItem="sbr-Jx-U7f" secondAttribute="centerY" id="0sX-6c-jLR"/>
+                                    <constraint firstItem="twW-tF-Tgl" firstAttribute="leading" secondItem="sbr-Jx-U7f" secondAttribute="leading" constant="21" id="cbf-Oh-gWz"/>
+                                    <constraint firstAttribute="height" constant="40" id="doa-VN-iws"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjq-fl-aB7" customClass="CardView" customModule="SocialMedia" customModuleProvider="target">
+                                <rect key="frame" x="13" y="53" width="140" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftl-fU-2mV">
+                                        <rect key="frame" x="47.5" y="13" width="45" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="hzQ-cb-bWd"/>
+                                            <constraint firstAttribute="height" constant="44" id="phE-TY-pu0"/>
+                                        </constraints>
+                                        <state key="normal" image="Font Size"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="ftl-fU-2mV" firstAttribute="centerX" secondItem="tjq-fl-aB7" secondAttribute="centerX" id="SeI-jn-wd5"/>
+                                    <constraint firstItem="ftl-fU-2mV" firstAttribute="centerY" secondItem="tjq-fl-aB7" secondAttribute="centerY" id="Z4E-2F-rxH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTJ-wZ-4An" customClass="CardView" customModule="SocialMedia" customModuleProvider="target">
+                                <rect key="frame" x="168" y="53" width="140" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIz-Gb-Lh0">
+                                        <rect key="frame" x="47.5" y="13" width="45" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="h6e-T9-3af"/>
+                                            <constraint firstAttribute="width" constant="45" id="oG5-Zy-2p7"/>
+                                        </constraints>
+                                        <state key="normal" image="gallery"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstItem="BIz-Gb-Lh0" firstAttribute="centerX" secondItem="KTJ-wZ-4An" secondAttribute="centerX" id="Bjj-yO-T8b"/>
+                                    <constraint firstItem="BIz-Gb-Lh0" firstAttribute="centerY" secondItem="KTJ-wZ-4An" secondAttribute="centerY" id="gfr-8x-8hk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="KTJ-wZ-4An" firstAttribute="width" secondItem="tjq-fl-aB7" secondAttribute="width" id="0IB-pi-yWy"/>
+                            <constraint firstItem="tjq-fl-aB7" firstAttribute="top" secondItem="sbr-Jx-U7f" secondAttribute="bottom" constant="13" id="0sA-IG-AlP"/>
+                            <constraint firstAttribute="trailing" secondItem="KTJ-wZ-4An" secondAttribute="trailing" constant="12" id="6Xg-OY-46M"/>
+                            <constraint firstAttribute="trailing" secondItem="sbr-Jx-U7f" secondAttribute="trailing" id="8Bv-Uh-9jz"/>
+                            <constraint firstItem="tjq-fl-aB7" firstAttribute="leading" secondItem="w8s-75-Fmu" secondAttribute="leading" constant="13" id="9rs-Ug-XWW"/>
+                            <constraint firstItem="sbr-Jx-U7f" firstAttribute="top" secondItem="w8s-75-Fmu" secondAttribute="top" id="XRu-13-Tma"/>
+                            <constraint firstAttribute="bottom" secondItem="tjq-fl-aB7" secondAttribute="bottom" constant="17" id="YZV-Dn-cm7"/>
+                            <constraint firstItem="tjq-fl-aB7" firstAttribute="top" secondItem="KTJ-wZ-4An" secondAttribute="top" id="aJG-Wi-Kk0"/>
+                            <constraint firstItem="KTJ-wZ-4An" firstAttribute="leading" secondItem="tjq-fl-aB7" secondAttribute="trailing" constant="15" id="lmK-3h-USQ"/>
+                            <constraint firstItem="sbr-Jx-U7f" firstAttribute="leading" secondItem="w8s-75-Fmu" secondAttribute="leading" id="oFX-ZR-vz2"/>
+                            <constraint firstItem="KTJ-wZ-4An" firstAttribute="height" secondItem="tjq-fl-aB7" secondAttribute="height" id="qe0-gf-cFh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="labelColor"/>
+                <constraints>
+                    <constraint firstItem="w8s-75-Fmu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2D6-AU-euM"/>
+                    <constraint firstAttribute="trailing" secondItem="w8s-75-Fmu" secondAttribute="trailing" id="NKU-c3-k1b"/>
+                    <constraint firstItem="w8s-75-Fmu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YZc-Ol-EwE"/>
+                    <constraint firstAttribute="bottom" secondItem="w8s-75-Fmu" secondAttribute="bottom" id="mZ9-Lk-gOQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="gallery_btn" destination="BIz-Gb-Lh0" id="BSm-lC-7Sj"/>
+                <outlet property="text_btn" destination="ftl-fU-2mV" id="9rJ-gZ-zk1"/>
+            </connections>
+            <point key="canvasLocation" x="71.014492753623188" y="60.9375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Font Size" width="40" height="40"/>
+        <image name="gallery" width="45" height="44"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCollectionViewCell" customModule="SocialMedia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jS-ne-4OK" customClass="CardView" customModule="SocialMedia" customModuleProvider="target">
+                        <rect key="frame" x="4" y="4" width="162" height="162"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demio" translatesAutoresizingMaskIntoConstraints="NO" id="Mse-bF-cwL">
+                                <rect key="frame" x="4" y="4" width="154" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="BRy-S4-B5i"/>
+                                    <constraint firstAttribute="width" constant="154" id="rOh-zs-WSe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mse-bF-cwL" firstAttribute="leading" secondItem="1jS-ne-4OK" secondAttribute="leading" constant="4" id="6ys-eE-k10"/>
+                            <constraint firstAttribute="trailing" secondItem="Mse-bF-cwL" secondAttribute="trailing" constant="4" id="NjR-gX-lx1"/>
+                            <constraint firstItem="Mse-bF-cwL" firstAttribute="top" secondItem="1jS-ne-4OK" secondAttribute="top" constant="4" id="SWW-qq-6Y6"/>
+                            <constraint firstAttribute="bottom" secondItem="Mse-bF-cwL" secondAttribute="bottom" constant="4" id="esy-H4-CUr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="1jS-ne-4OK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="3W1-fw-tFk"/>
+                <constraint firstAttribute="bottom" secondItem="1jS-ne-4OK" secondAttribute="bottom" constant="4" id="9T1-DB-rRZ"/>
+                <constraint firstItem="1jS-ne-4OK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="Am2-sQ-Fr4"/>
+                <constraint firstItem="1jS-ne-4OK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="Ekv-sF-c2z"/>
+                <constraint firstAttribute="trailing" secondItem="1jS-ne-4OK" secondAttribute="trailing" constant="4" id="NOL-Lp-DuE"/>
+                <constraint firstItem="1jS-ne-4OK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="RSB-Oq-5Fo"/>
+                <constraint firstAttribute="bottom" secondItem="1jS-ne-4OK" secondAttribute="bottom" constant="4" id="iuG-gy-Zkj"/>
+                <constraint firstAttribute="trailing" secondItem="1jS-ne-4OK" secondAttribute="trailing" constant="4" id="jV9-LH-LPV"/>
+            </constraints>
+            <connections>
+                <outlet property="backview" destination="1jS-ne-4OK" id="1iG-bp-MRG"/>
+                <outlet property="imgview" destination="Mse-bF-cwL" id="vUl-yG-rgs"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="87.723214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="demio" width="860" height="471"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
